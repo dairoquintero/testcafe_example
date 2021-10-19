@@ -1,0 +1,29 @@
+{
+  "name": "testcafe-testing",
+  "version": "1.0.0",
+  "description": "Testcafe first steps",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome src/test/basic.test.js -s takeOnFails=true --disable-page-caching",
+    "test:firefox": "testcafe firefox src/test/basic.test.js",
+    "test:chrome:headless": "testcafe chrome:headless src/test/basic.test.js ",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X  src/test/basic.test.js",
+    "test:e2e": "testcafe  chrome src/test/e2e -s takeOnFails=true",
+    "test:e2e:6": "testcafe -c 6  chrome src/test/e2e -s takeOnFails=true",
+    "test:headless:5": "testcafe -c 5  chrome:headless src/test/e2e -s takeOnFails=true",
+    "test:multiple": "testcafe chrome,firefox  src/test/e2e -s takeOnFails=true"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing"
+  ],
+  "author": "Dairo Quintero",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.3.1"
+  },
+  "devDependencies": {
+    "testcafe": "^1.14.2",
+    "testcafe-blink-diff": "^0.4.8"
+  }
+}
