@@ -1,5 +1,5 @@
 import { Selector } from 'testcafe';
-import { login } from '../../../helper.js';
+import { login } from '../helper/helper.js';
 
 fixture`Add new payee`.page('http://zero.webappsecurity.com/');
 test.before(async t => {

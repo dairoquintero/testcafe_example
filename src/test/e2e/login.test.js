@@ -1,5 +1,5 @@
 import { Selector } from 'testcafe';
-import { login } from '../../../helper.js';
+import { login } from '../helper/helper.js';
 
 fixture`Login Test`
 	.page('http://zero.webappsecurity.com/')
